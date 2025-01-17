@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="lol.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>League of Legends</title>
+
+    <style>
+        .notes-info {
+            display: none;
+            margin-top: 10px;
+        }
+
+        .notes-info.visible {
+            display: block; 
+        }
+
+        h3 {
+            cursor: pointer; 
+        }
+        
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Patch Notes</h1>
+        <p>Leia aqui, tudo sobre as novas notas de atualização.</p>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="champions.html">Campeões</a>
+                <a href="comunity.html">Comunidade e Competitivo</a>
+                <a href="lanes.html">Rotas</a>
+            </nav>
+    </header>
+
+    <main class="notes">
+        <section>
+            <h3 class="notes-title">Atualização 25.T1.1</h3>
+            <div class="notes-info">
+                <h4>Boas-Vindas a Noxus e à Temporada 1!</h4>
+                <p>
+
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3 class="notes-title">Atualização 14.24</h3>
+            <div class="notes-info">
+                <h4>Boas-Vindas à Atualização 14.24!</h4>
+                <p>
+                    
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3 class="notes-title">Atualização 14.23</h3>
+            <div class="notes-info">
+                <h4>Boas-Vindas à Atualização 14.23!</h4>
+                <p>
+                    
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3 class="notes-title">Atualização 14.22</h3>
+            <div class="notes-info">
+                <h4>Boas-Vindas à Atualização 14.22!</h4>
+                <p>
+                    
+                </p>
+            </div>
+        </section>
+        <section>
+            <h3 class="notes-title">Atualização 14.21</h3>
+            <div class="notes-info">
+                <h4>Boas-Vindas à Atualização 14.21!</h4>
+                <p>
+                    
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+
+        document.querySelectorAll('.notes-title').forEach(title => {  //document.querySelectorAll('.champ-title'): Seleciona todos os elementos com a classe champ-title.
+            title.addEventListener('click', () => { //Adiciona um evento de clique a cada título.
+                const info = title.nextElementSibling; //Localiza o próximo elemento do DOM logo após o título, que é a div contendo as informações do campeão.
+                if (info && info.classList.contains('notes-info')) {
+                    info.classList.toggle('visible'); //Alterna a visibilidade da seção de informações.
+                }
+            });
+        });
+
+    </script>
+
+</body>
