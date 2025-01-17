@@ -12,6 +12,7 @@ body {
     color: #eaeaea;
     line-height: 1.6;
     padding: 0 10px;
+    
 }
 
 /* Cabeçalho */
@@ -111,29 +112,5 @@ footer p {
     font-size: 1rem;
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
 
-    header p {
-        font-size: 1rem;
-    }
 
-    header nav a {
-        font-size: 0.9rem;
-    }
-
-    main h2 {
-        font-size: 1.8rem;
-    }
-
-    section h3 {
-        font-size: 1.5rem;
-    }
-
-    section h4 {
-        font-size: 1.3rem;
-    }
-}
